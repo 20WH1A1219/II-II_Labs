@@ -15,7 +15,7 @@
         scanf("%d",&prio[i]);
         p[i]=i+1;           //contains process number
     }
-for(i=0;i<n;i++)
+    for(i=0;i<n;i++)
     {
         pos=i;
         for(j=i+1;j<n;j++)
@@ -38,7 +38,7 @@ for(i=0;i<n;i++)
     }
  
     wt[0]=0;	//waiting time for first process is zero
- for(i=1;i<n;i++)
+    for(i=1;i<n;i++)
     {
         wt[i]=0;
         for(j=0;j<i;j++)
@@ -62,6 +62,6 @@ for(i=0;i<n;i++)
     printf("\n\nAverage Waiting Time=%d",avg_wt);
     printf("\nAverage Turnaround Time=%d\n",avg_tat);
  
-	return 0;
+    return 0;
 }
 
