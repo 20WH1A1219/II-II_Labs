@@ -29,7 +29,8 @@ int main() {
       write(pipefds1[1], pipe1writemessage, sizeof(pipe1writemessage));
       read(pipefds2[0], readmessage, sizeof(readmessage));
       printf("In Parent: Reading from pipe 2 – Message is %s\n", readmessage);
-   } else {
+   } 
+   else {
       close(pipefds1[1]); 
       close(pipefds2[0]); 
       read(pipefds1[0], readmessage, sizeof(readmessage));
