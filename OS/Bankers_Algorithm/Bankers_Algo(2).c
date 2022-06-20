@@ -10,7 +10,7 @@ int main()
 	//n = 5; // Number of processes
 	//m = 3; // Number of resources
 	int alloc[n][m];
-	printf("Enter Allocation matrix:\n");
+	printf("\nEnter Allocation matrix:\n");
 	for(int i=0;i<n;i++){
 	    printf("Enter instances of p[%d]\n",i);
 	    for(int j=0;j<m;j++)
@@ -21,7 +21,7 @@ int main()
 	    }
 	}
 	int max[n][m];
-	printf("Enter max matrix:\n");
+	printf("\nEnter max matrix:\n");
 	for(int i=0;i<n;i++){
 	    printf("Enter instances of p[%d]\n",i);
 	    for(int j=0;j<m;j++){
@@ -31,7 +31,7 @@ int main()
 	    }
 	}
 	int avail[m];
-	printf("Enter available Resources: ");
+	printf("\nEnter available Resources: ");
 	for(int j=0;j<m;j++){
 	    printf("Enter availability of instances of p[%d]: ",j);
 	    scanf("%d",&avail[j]);
